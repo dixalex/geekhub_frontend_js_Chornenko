@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <h1>Lessons "Forms": tags and atributtes</h1>
+  <h2>Tell something about yourself!</h2>
+
+     	<form class="dataa" >
+        <fieldset>
+    <legend><b>Briefly about yourself.</b></legend>
+  	<label for="nickname">Name:</label>
+  	<input type="text" id="nickname" name="nickname"><br><br>
+  	 <label for="lastname">Last name:</label>
+  	 <input type="text" id="lastname" name="lastname"> <br>
+      <p>Female</p> <nobr>
+    <input type="radio" name="female" value="f1">Girl
+    <input type="radio" name="female" value="f2">Boy<br>
+     <input type="number" id="age" name="age">
+	   <label for="age">Age.</label>
+    </fieldset>
+    </form><br>
+    	<form class="abouty">
+        <fieldset>
+    <legend><b>In detail about yourself.</b></legend>
+    <input type="radio" name="female" value="f1">Girl<br>
+    <input type="radio" name="female" value="f2">Boy<br>
+	  <input type="text" id="dateb" name="dateb">
+	  <label for="dateb">Date of birth.</label><br>
+    <input type="text" id="status" name="status"> 
+	  <label for="status">Family status.</label><br>
+    <input type="text" id="socstatus" name="socstatus"> 	
+    <label for="socstatus">Sociaty status.</label><br>
+    <input type="text" id="place" name="place"> 
+    <label for="place">Place of residence.</label><br>
+      <p><b>What do you do on the weekend?</b></p>
+    <input type="checkbox" name="option1" value="a1">Sleep<br>
+    <input type="checkbox" name="option2" value="a2">Spend time with friends<br>
+    <input type="checkbox" name="option3" value="a3">Go on fish<br> 
+    <input type="checkbox" name="option4" value="a4">Play in game<br> 
+      <p><b>How many books have you read in your life?</b></p>
+    <input type="radio" name="opt" value="o1">0-10<br>
+    <input type="radio" name="opt" value="o2">11-20<br>
+    <input type="radio" name="opt" value="o3">21-50<br>
+    <input type="radio" name="opt" value="o4">50+<br>
+      <p><b>Your comment.</b></p>
+    <textarea rows="10" cols="20">
+    </textarea><br>
+    <select>
+    <option>Position 1</option>
+    <option>Position 2</option>
+    <option>Position 3</option>
+    </select>
+         </fieldset>
+    	 </form>
+         <form class="otherinf">
+         <fieldset>
+    <legend><b>And finally.</b></legend>
+    <input type="text" id="text" name="text" value="This text field for you"><br><br>
+    <label for="user-email">Your e-mail:</label>
+    <input type="email" id="user-email" name="user-email">
+      <p><b>What do you want to see in our letter ?</b></p>
+    <p><input type="checkbox" name="spam1" value="sp1">Education<br>
+    <input type="checkbox" name="spam2" value="sp2">How to cook<br>
+    <input type="checkbox" name="spam3" value="sp3">One million and more problem<br></p>
+      <p><b>How challenging is it?</b></p>
+    <input type="radio" name="hard" value="h1">Not at all.<br>
+    <input type="radio" name="hard" value="h2">So-so.<br>
+    <input type="radio" name="hard" value="h3">Hardly coped.<br>
+         </fieldset>
+         </form>
+   		 <form>
+    <p><input type="submit" value="Send"></p>
+    	 </form>
+ 
+  </body>
+</html>
