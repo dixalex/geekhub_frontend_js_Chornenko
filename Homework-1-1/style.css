@@ -1,0 +1,31 @@
+body {
+    position: absolute;
+	margin-left: 25%;
+	margin-right: 25%;
+
+	}
+
+h1,address {
+		text-align: center;
+	}
+
+.img1 {
+	float: left;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+.img2 {
+	text-align:  center;
+}	
+
+img {
+	width: 300px;
+	height: 220px;
+	
+}
+.textcenter {
+	text-align: center;
+}
+.textright {
+	text-align: right;
+}
