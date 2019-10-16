@@ -1,80 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Form</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-  <h1>Lessons "Forms": tags and atributtes</h1>
-  <h2>Tell something about yourself!</h2>
+</head>
+<body>
+<h1>Lessons "Forms": tags and atributtes</h1>
+<h2>Tell something about yourself!</h2>
+<!--1. did you test with validator? seems like you did not ;)
+2. where are main headings? :)-->
 
-     	<form>
-        <fieldset>
-    <legend><b>Briefly about yourself.</b></legend>
-  	<label for="nickname">Name:</label>
-  	<input type="text"><br><br>
-  	 <label for="lastname">Last name:</label>
-  	 <input type="text"> <br>
-      <p>Female</p> <nobr>
-    <input type="radio">Girl
-    <input type="radio">Boy<br>
-     <input type="number">
-	   <label for="age">Age.</label>
+<!--don't forget that alignment is important-->
+<form>
+    <fieldset>
+<!--        what do you think about lists here?-->
+<!--      <b> is fine right now, but in future use CSS-->
+        <legend><b>Briefly about yourself.</b></legend>
+        <label for="nickname">Name:</label>
+<!--      you're putting 'for' in label but do not put 'id' in input, do you know that it's required? Please fix for the whole form-->
+<!--      I don't think <br> is good here, let's figure out on the lesson if there're alternatives-->
+        <input type="text"><br><br>
+        <label for="lastname">Last name:</label>
+        <input type="text"> <br>
+        <!--        this is definitely not a paragraph of text. try span... actually I don't see anything related to 'Female', maybe you lost something?-->
+        <p>Female</p>
+<!--        nobr tag is depreciated-->
+        <nobr>
+<!--          you're not using 'name', the form will not be able to pass values to the backend without it-->
+            <input type="radio">Girl
+            <input type="radio">Boy<br>
+            <input type="number">
+            <label for="age">Age.</label>
     </fieldset>
-    </form><br>
-    	<form>
-        <fieldset>
-    <legend><b>In detail about yourself.</b></legend>
-    <input type="radio" >Girl<br>
-    <input type="radio" >Boy<br>
-	  <input type="text" >
-	  <label for="dateb">Date of birth.</label><br>
-    <input type="text" > 
-	  <label for="status">Family status.</label><br>
-    <input type="text"> 	
-    <label for="socstatus">Sociaty status.</label><br>
-    <input type="text"> 
-    <label for="place">Place of residence.</label><br>
-      <p><b>What do you do on the weekend?</b></p>
-    <input type="checkbox" >Sleep<br>
-    <input type="checkbox" >Spend time with friends<br>
-    <input type="checkbox" >Go on fish<br> 
-    <input type="checkbox" >Play in game<br> 
-      <p><b>How many books have you read in your life?</b></p>
-    <input type="radio">0-10<br>
-    <input type="radio">11-20<br>
-    <input type="radio">21-50<br>
-    <input type="radio">50+<br>
-      <p><b>Your comment.</b></p>
-    <textarea rows="10" cols="20">
+</form>
+<!--      <b> is fine right now, but in future use CSS-->
+<br>
+<!--you should not make a separate <form> because the first one does not have a 'submit' button. the whole document is large <form>-->
+<form>
+    <fieldset>
+<!--      same issues as the above-->
+        <legend><b>In detail about yourself.</b></legend>
+        <input type="radio">Girl<br>
+        <input type="radio">Boy<br>
+        <input type="text">
+        <label for="dateb">Date of birth.</label><br>
+        <input type="text">
+        <label for="status">Family status.</label><br>
+        <input type="text">
+        <label for="socstatus">Sociaty status.</label><br>
+        <input type="text">
+        <label for="place">Place of residence.</label><br>
+<!--        this is definitely not a paragraph of text. try span-->
+        <p><b>What do you do on the weekend?</b></p>
+        <input type="checkbox">Sleep<br>
+        <input type="checkbox">Spend time with friends<br>
+        <input type="checkbox">Go on fish<br>
+        <input type="checkbox">Play in game<br>
+        <!--        this is definitely not a paragraph of text. try span-->
+        <p><b>How many books have you read in your life?</b></p>
+        <input type="radio">0-10<br>
+        <input type="radio">11-20<br>
+        <input type="radio">21-50<br>
+        <input type="radio">50+<br>
+        <!--        this is definitely not a paragraph of text. try label-->
+        <p><b>Your comment.</b></p>
+        <textarea rows="10" cols="20">
     </textarea><br>
-    <select>
-    <option>Position 1</option>
-    <option>Position 2</option>
-    <option>Position 3</option>
-    </select>
-         </fieldset>
-    	 </form>
-         <form>
-         <fieldset>
-    <legend><b>And finally.</b></legend>
-    <input type="text"  placeholder="This text field for you"><br><br>
-    <label for="user-email">Your e-mail:</label>
-    <input type="email">
-      <p><b>What do you want to see in our letter ?</b></p>
-    <p><input type="checkbox">Education<br>
-    <input type="checkbox">How to cook<br>
-    <input type="checkbox">One million and more problem<br></p>
-      <p><b>How challenging is it?</b></p>
-    <input type="radio">Not at all.<br>
-    <input type="radio">So-so.<br>
-    <input type="radio">Hardly coped.<br>
-         </fieldset>
-         </form>
-   		 <form>
+        <select>
+            <option>Position 1</option>
+            <option>Position 2</option>
+            <option>Position 3</option>
+        </select>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <legend><b>And finally.</b></legend>
+        <input type="text" placeholder="This text field for you"><br><br>
+        <label for="user-email">Your e-mail:</label>
+        <input type="email">
+        <!--        this is definitely not a paragraph of text. try span-->
+        <p><b>What do you want to see in our letter ?</b></p>
+        <!--        this is definitely not a paragraph of text. try list and <br> will be not necessary then-->
+        <p><input type="checkbox">Education<br>
+            <input type="checkbox">How to cook<br>
+            <input type="checkbox">One million and more problem<br></p>
+        <!--        this is definitely not a paragraph of text. try span-->
+        <p><b>How challenging is it?</b></p>
+        <input type="radio">Not at all.<br>
+        <input type="radio">So-so.<br>
+        <input type="radio">Hardly coped.<br>
+    </fieldset>
+</form>
+<form>
     <p><input type="submit" value="Send"></p>
-    	 </form>
- 
-  </body>
+</form>
+
+</body>
 </html>
